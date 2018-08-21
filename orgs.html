@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="header">
+    <h1>{{ site.name }}</h1>
+    <ul>
+        {% for item in site.data.navigation %}
+        <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="blog">
+    <ul>
+    {% for org_hash in site.data.orgs %}
+    {% assign org = org_hash[1] %}
+      <li>
+        {% if org.website %}<a href="{{ org.website }}">{% endif %}
+          {{ org.name }}        
+        {% if org.website %}</a>{% endif %}
+        {% if org.phone %}<a href="tel:{{ org.phone }}">{{ org.phone }}</a>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+</div>
