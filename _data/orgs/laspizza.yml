@@ -3,6 +3,15 @@ phone:
 website: http://www.laspizza.com/
 address:
 hours:
+  monday:
+  tuesday:
+  wednesday:
+  thursday:
+  friday:
+  saturday:
+  sunday:
 categories:
+  - snack
+  - fast-food
 facebook:
 twitter:
