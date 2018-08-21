@@ -10,8 +10,6 @@ hours:
   friday:
   saturday:
   sunday:
-categories:
-  - snack
-  - fast-food
+categories: [snack, fast-food]
 facebook:
 twitter:
