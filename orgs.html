@@ -21,6 +21,13 @@ layout: default
           {{ org.name }}        
         {% if org.website %}</a>{% endif %}
         {% if org.phone %}<a href="tel:{{ org.phone }}">{{ org.phone }}</a>{% endif %}
+        {% if org.categories != empty %}
+            <ul>
+            {% for category in org.categories %}
+                <li>{{ category }}</li>  
+            {% endfor %}
+          </ul>
+        {% endif %}
       </li>
     {% endfor %}
     </ul>
